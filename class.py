@@ -21,3 +21,10 @@ mycylinder=Cylinder(3,5)
 print(mycylinder.volume())
 
 print(mycylinder.surfacearea())
+
+
+def add(x,y):
+    
+    return x+y
+
+print(add(4,4))
