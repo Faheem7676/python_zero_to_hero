@@ -7,3 +7,16 @@ for i in range(5):
     print("\n")
         
         
+        
+l=["Apple","Ball","Cat"]
+
+print(l)
+print(len(l))
+
+print(l[1])
+
+print(l.append("Dog"))
+
+print(l)
+print(l.pop())
+
