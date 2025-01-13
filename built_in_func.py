@@ -13,3 +13,7 @@ print(x)
 mylist=["True","True","True"]
 
 print(all(mylist))
+
+mylist1=[0,1,1]
+
+print(all(mylist1))
