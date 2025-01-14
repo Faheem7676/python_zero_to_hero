@@ -2,7 +2,7 @@ import xlrd
 
 def get_data():
     
-    wb=xlrd.open_workbook("/home/user/Desktop/python_zero_to_hero/PayeeDetails.xlsx")
+    wb=xlrd.open_workbook("/home/faheem/Desktop/python_zero_to_hero/PayeeDetails.xlsx")
     
     sheet=wb.sheet_by_name("PayeeDetails")
     
@@ -19,5 +19,7 @@ def get_data():
         datali.append(data)
         
     return datali
+
+get_data()
             
     
