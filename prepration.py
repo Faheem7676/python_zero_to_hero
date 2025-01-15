@@ -19,11 +19,30 @@ print(type(tuple))
 set={4,3,"Faheem"}
 print(type(set))
 
-dict={1: "value1",2: "value2"}
+dict1={1: "value1",2: "value2"}
 
 print(type(dict))
 
-print(dict[1])
+print(dict1[1])
 
 x=str("Hello world")
 print(x)
+x=int(20)
+print(type(x))
+x=complex(5j)
+print(type(x))
+
+x=list((2,"Faheem","testing",4,"Banana","cherry"))
+
+print(type(x))
+
+for i in x:
+    
+    print(i)
+    
+x=dict(name="Faheem",Age=44)
+print(type(x))
+
+print(x["name"])
+print(x["Age"])
+
