@@ -34,3 +34,6 @@ myset={0,1,0}
 
 print(any(myset))
 
+mydict = {0 : "Apple", 1 : "Orange"}
+x = any(mydict)
+
