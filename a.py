@@ -30,4 +30,7 @@ print(arr[-1])
 print(arr[:-1])
 
 
+myset={0,1,0}
+
+print(any(myset))
 
