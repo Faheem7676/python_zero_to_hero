@@ -44,3 +44,28 @@ elif a==0:
     
 else:
     print("A is negative number")
+    
+    
+a=1
+
+if a>0 and a%2 ==0:
+    
+    print("A is an integer and positive number")
+    
+elif a>0 and a%2 !=0:
+    print("A is positive number")
+    
+elif a==0:
+    print("A is zero")
+    
+else:
+    print("A is negative")
+    
+user="user1"
+password=5
+
+if user=="Admin" or password>=5:
+    print("Acess granted")
+    
+else:
+    print("Access denied")
