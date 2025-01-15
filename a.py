@@ -37,3 +37,6 @@ print(any(myset))
 mydict = {0 : "Apple", 1 : "Orange"}
 x = any(mydict)
 
+cars = ["Ford", "Volvo", "BMW"]
+for x in cars:
+  print(x)
