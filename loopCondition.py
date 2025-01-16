@@ -96,7 +96,7 @@ for key, value in person.items():
     print(key,value)
     
 print(person["address"]["pincode"])
-print(person["skills"][0])
+#print(person["skills"][0])
 
 it_companies={"facebook","Ginger webs","Google","flip cart"}
 
@@ -113,3 +113,65 @@ for i in tuple:
     
     if i==3:
         break
+    
+
+# list=list(range(11))
+# print(list)
+st=set(range(1,11))
+print(st)
+
+l=list(range(2,21,2))
+print(l)
+
+for number in range(1,11):
+    
+    print(number)
+    
+    
+for key in person:
+    
+    if key=="skills":
+        
+        for skill in person["skills"]:
+            
+            print(skill)
+    else:
+        print("Not exist")
+        
+        
+for number in range(1,11):
+    
+    print(number)
+    
+else:
+    print("the loop ended",number)
+    
+    
+for i in range(11):
+    pass
+
+print("For loop")
+for number in range(11):
+    
+    print(number)
+    
+print("while loop")   
+i=0
+
+while i <=10:
+    print(i)
+    i=i+1
+    
+print("****************************")    
+for number in range(10,-1,-1):
+    
+    print(number)
+ 
+    
+print("while loop")    
+number=10
+
+while number>-0:
+    print(number)
+    
+    number=number-1
