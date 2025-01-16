@@ -175,3 +175,89 @@ while number>-0:
     print(number)
     
     number=number-1
+    
+
+for i in range(7):
+    
+    for j in range(i):
+        
+        print("#",end=" ")
+        
+    print('\n')
+
+
+print("****************************")
+
+for i in range(7):
+    
+    for j in range(7):
+        
+        print("#",end=" ")
+        
+    print('\n')
+    
+    
+for i in range(7):
+    
+    for j in range(i):
+        
+        print(i*j,end=" ")
+        
+    print('\n')
+    
+    
+for i in range(11):
+    print(f"{i} X  {i}={i*i}")
+    
+list=['Python', 'Numpy','Pandas','Django', 'Flask']
+
+for l in list:
+    print(l)
+    
+    
+for i in range(0,101):
+ 
+    
+    if i % 2==0:
+        
+        print(i)
+        
+        
+for i in range(0,101):
+     
+    
+    if i % 2!=0:
+        
+        print(i)
+        
+
+print("**********************************")       
+print("Sum of the number")
+
+sum=0
+
+for num in range(0,101):
+    
+    
+    sum=sum+num
+    print(sum)
+    
+print("the below code")   
+sum_evens=0
+sum_odds=0
+
+for i in range(101):
+    
+    if i%2==0:
+        
+    
+        sum_evens=sum_evens+i
+    else:
+        
+        sum_odds=sum_odds+i
+        
+print(f"Sum of all the even number",{sum_evens})
+
+print(f"Sum of the all the odds",{sum_odds})
+    
+    
