@@ -263,6 +263,7 @@ print(f"Sum of the all the odds",{sum_odds})
     
 # Import the countries list from the countries.py file
 from countries import countries # Adjust the import path if necessary
+from countries import persons
 
 # Initialize an empty list to store countries containing "land"
 countries_with_land = []
@@ -275,4 +276,16 @@ for country in countries:
 # Print the results
 print("Countries containing 'land':")
 print(countries_with_land)
+
+
+person_list=[]
+
+for person in persons:
     
+    if "ul" in person:
+        
+        person_list.append(person)
+        
+print("Person name who has l char in their name",person_list)
+    
+        
