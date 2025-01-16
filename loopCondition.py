@@ -261,3 +261,18 @@ print(f"Sum of all the even number",{sum_evens})
 print(f"Sum of the all the odds",{sum_odds})
     
     
+# Import the countries list from the countries.py file
+from countries import countries # Adjust the import path if necessary
+
+# Initialize an empty list to store countries containing "land"
+countries_with_land = []
+
+# Loop through each country
+for country in countries:
+    if "land" in country:  # Check if "land" is in the country's name
+        countries_with_land.append(country)
+
+# Print the results
+print("Countries containing 'land':")
+print(countries_with_land)
+    
