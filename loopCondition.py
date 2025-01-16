@@ -287,5 +287,21 @@ for person in persons:
         person_list.append(person)
         
 print("Person name who has l char in their name",person_list)
+
+fruit_list=['banana', 'orange', 'mango', 'lemon']
+reverslist=[]
+
+for list in range(len(fruit_list)-1,-1,-1):
+    
+    reverslist.append(fruit_list[list])
+    
+
+print(reverslist)
+
+for fruit in fruit_list:
+    
+    print(fruit[-1])
+    
+  
     
         
