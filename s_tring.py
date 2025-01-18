@@ -223,4 +223,107 @@ print(num.isnumeric())
 num="3.23"
 print(num.isnumeric())
 
+challenge="34string"
+print(challenge.isidentifier())
+challenge="fadfd43"
+print(challenge.isidentifier())
+challenge="ff.afd"
+print(challenge.isidentifier())
 
+string="THIS_IS_PYTHON_CODE"
+
+print(string.isidentifier())
+print(string.islower())
+print(string.isupper())
+
+web_tech=["Html","CSS","JavaScript","React"]
+
+result=" ".join(web_tech)
+
+print(result)
+
+string="  Fah  eem   "
+print(string)
+
+print(string.strip())
+
+print(string.replace("F","S"))
+
+string="thirty, days, of, python"
+
+print(string.replace("python","coding"))
+
+print(string.split())
+
+print(string.split(","))
+
+string="FaheemamFaheemandlookingforajob"
+
+print(string.title())
+
+print(string.swapcase())
+
+print(string.startswith("ah"))
+
+print(string.isalpha())
+
+company="Coding for all"
+print(company)
+print(len(company))
+
+print(company.upper())
+print(company.lower())
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+
+first_word="Coding For All string."
+
+print(first_word[0:6])
+
+print(first_word.replace("Coding","Python"))
+
+string="Python for Everyone"
+changstring="Python for All"
+print(string)
+
+print(string.replace("for Everyone","for All"))
+
+print(string.split())
+
+string="Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+
+print(string.split(","))
+
+# string="Coding For All"
+# print(string.index[0])
+
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+radious=10
+area=3.14 * radious **2
+
+print("The area of circle with radious {} is.".format(area,radious))
+
+a=8
+b=6
+print("{}+{}={}".format(a,b,a+b))
+
+print("{}-{}={}".format(a,b,a-b))
+
+print("{} * {}={}".format(a,b, a*b))
+
+python_libraries=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+
+print("#".join(python_libraries))
+
+variable1="30DaysOfPython"
+variable2="thirty_days_of_python"
+
+print(variable1.isidentifier())
+print(variable2.isidentifier())
+
+string='   Coding For All      '
+print(len(string))
+string2=string.strip()
+print(len(string2))
