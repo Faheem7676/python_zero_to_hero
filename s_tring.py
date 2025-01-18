@@ -155,3 +155,72 @@ print(string.count("automation"))
 print(string.endswith("ion"))
 
 print(string.endswith("oon"))
+
+tabspace="thirty\tdays\tof\tpython"
+
+print(tabspace.expandtabs())
+print(tabspace.expandtabs(10))
+
+str="Kaleem"
+
+print(str.find("e"))
+print(str.find("i"))
+print(str.rfind("e"))
+
+
+first_name="Faheem"
+last_name="Farooqui"
+job="Software Testing"
+sentence="I am {} {} and I am looking for a job in {} industries.".format(first_name,last_name,job)
+print(sentence)
+
+challenge="python course of 30 days"
+substring="n"
+
+print(challenge.index(substring,5))
+
+checks="pythoncodecourse123"
+
+print(checks.isalnum())
+
+checks="python code is easy"
+print(checks.isalnum())
+
+isAlpha="pythoncodeisgoodprograminglanguage"
+print(isAlpha.isalpha())
+
+isAlpha="ABC332"
+print(isAlpha.isalpha())
+
+isAlpha="ABCfldsjfljsdlfjd"
+print(isAlpha.isalpha())
+
+destring="this is python code"
+print(destring.isdecimal())
+
+destring="443343980808"
+print(destring.isdecimal())
+
+isDigit="-1"
+print(isDigit.isdigit())
+isDigit="\u00B2"
+print(isDigit.isdigit())
+
+isDecimal="1299"
+print(isDecimal.isdecimal())
+
+challenge = '\u00B2'
+print(challenge.isdigit())   # True
+
+num="23"
+print(num.isnumeric())
+
+num="Abc00BD"
+print(num.isnumeric())
+
+num="\u00BD"
+print(num.isnumeric())
+num="3.23"
+print(num.isnumeric())
+
+
