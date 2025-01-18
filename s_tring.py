@@ -44,3 +44,10 @@ print("I am not goin to tell you. \n You get it from your self.")
 print("Days\tTopics\tExercise")
 
 print("Day t1\t5\t6")
+
+#string only
+
+first_name="Wakeel"
+last_name="juj"
+language="python"
+print("I am %s %s. I teach %s" %(first_name,last_name,language))
