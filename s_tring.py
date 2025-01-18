@@ -51,3 +51,23 @@ first_name="Wakeel"
 last_name="juj"
 language="python"
 print("I am %s %s. I teach %s" %(first_name,last_name,language))
+
+#string and number
+radious=10
+pi=3.14
+area=pi*radious**2
+
+formated_string="The area of circle with the %d is %.2f." %(radious,area)
+print(formated_string)
+
+# Strings  and numbers
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+formated_string = 'The area of circle with a radius %d is %.2f.' %(radius, area)
+
+print(formated_string)
+
+python_libraries=["Numpy","Django","Flask","Pandas"]
+
+print("I am learning python libraries. %s" %(python_libraries))
