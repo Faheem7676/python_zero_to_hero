@@ -71,3 +71,37 @@ print(formated_string)
 python_libraries=["Numpy","Django","Flask","Pandas"]
 
 print("I am learning python libraries. %s" %(python_libraries))
+
+# This formatting is introduced in Python version 3.
+first_name="Naaz"
+last_name="Ahmed"
+language="Python"
+print("I am {} {}. and I am learning {}".format(first_name,last_name,language))
+
+a=4
+b=3
+
+print("{} + {} = {}".format(a,b,a+b))
+
+print("{}-{}={}".format(a,b,a-b))
+
+print("{} * {}={}".format(a,b,a*b))
+
+print("{} % {}={}".format(a,b,a%b))
+
+print("{}/{}={}".format(a,b, a/b))
+
+print("{}//{}={}".format(a,b, a//b))
+
+print("{}**{}={}".format(a,b,a**b))
+
+language="Python"
+print(language)
+a,b,c,d,e,f=language
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+
