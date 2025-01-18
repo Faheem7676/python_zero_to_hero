@@ -105,3 +105,53 @@ print(d)
 print(e)
 print(f)
 
+print(len(language)-1)
+
+language="python"
+print(language[0])
+print(language[1])
+last_index=len(language)-1
+last_letter=language[last_index]
+print(last_letter)
+
+print(language[-1])
+print(language[-2])
+
+language="python"
+first_three=language[0:3]
+# last three
+last_three=language[-3:]
+print(first_three)
+
+print(last_three)
+
+print(language[3:6])
+
+print(language[3:])
+
+greeting="Hello World"
+
+print(greeting[::-1])
+
+reversestr=""
+
+for i in greeting:
+    
+    reversestr=reversestr+i
+    
+print(reversestr)
+
+language = 'Python'
+pto = language[0:6:2] #
+print(pto) # Pto
+
+
+print(language.capitalize())
+
+string="Faheem is good tester but he is trying to swithc from manual to automation"
+
+print(string.count("automation"))
+
+print(string.endswith("ion"))
+
+print(string.endswith("oon"))
