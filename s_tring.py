@@ -71,3 +71,156 @@ print(formated_string)
 python_libraries=["Numpy","Django","Flask","Pandas"]
 
 print("I am learning python libraries. %s" %(python_libraries))
+
+# This formatting is introduced in Python version 3.
+first_name="Naaz"
+last_name="Ahmed"
+language="Python"
+print("I am {} {}. and I am learning {}".format(first_name,last_name,language))
+
+a=4
+b=3
+
+print("{} + {} = {}".format(a,b,a+b))
+
+print("{}-{}={}".format(a,b,a-b))
+
+print("{} * {}={}".format(a,b,a*b))
+
+print("{} % {}={}".format(a,b,a%b))
+
+print("{}/{}={}".format(a,b, a/b))
+
+print("{}//{}={}".format(a,b, a//b))
+
+print("{}**{}={}".format(a,b,a**b))
+
+language="Python"
+print(language)
+a,b,c,d,e,f=language
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+
+print(len(language)-1)
+
+language="python"
+print(language[0])
+print(language[1])
+last_index=len(language)-1
+last_letter=language[last_index]
+print(last_letter)
+
+print(language[-1])
+print(language[-2])
+
+language="python"
+first_three=language[0:3]
+# last three
+last_three=language[-3:]
+print(first_three)
+
+print(last_three)
+
+print(language[3:6])
+
+print(language[3:])
+
+greeting="Hello World"
+
+print(greeting[::-1])
+
+reversestr=""
+
+for i in greeting:
+    
+    reversestr=reversestr+i
+    
+print(reversestr)
+
+language = 'Python'
+pto = language[0:6:2] #
+print(pto) # Pto
+
+
+print(language.capitalize())
+
+string="Faheem is good tester but he is trying to swithc from manual to automation"
+
+print(string.count("automation"))
+
+print(string.endswith("ion"))
+
+print(string.endswith("oon"))
+
+tabspace="thirty\tdays\tof\tpython"
+
+print(tabspace.expandtabs())
+print(tabspace.expandtabs(10))
+
+str="Kaleem"
+
+print(str.find("e"))
+print(str.find("i"))
+print(str.rfind("e"))
+
+
+first_name="Faheem"
+last_name="Farooqui"
+job="Software Testing"
+sentence="I am {} {} and I am looking for a job in {} industries.".format(first_name,last_name,job)
+print(sentence)
+
+challenge="python course of 30 days"
+substring="n"
+
+print(challenge.index(substring,5))
+
+checks="pythoncodecourse123"
+
+print(checks.isalnum())
+
+checks="python code is easy"
+print(checks.isalnum())
+
+isAlpha="pythoncodeisgoodprograminglanguage"
+print(isAlpha.isalpha())
+
+isAlpha="ABC332"
+print(isAlpha.isalpha())
+
+isAlpha="ABCfldsjfljsdlfjd"
+print(isAlpha.isalpha())
+
+destring="this is python code"
+print(destring.isdecimal())
+
+destring="443343980808"
+print(destring.isdecimal())
+
+isDigit="-1"
+print(isDigit.isdigit())
+isDigit="\u00B2"
+print(isDigit.isdigit())
+
+isDecimal="1299"
+print(isDecimal.isdecimal())
+
+challenge = '\u00B2'
+print(challenge.isdigit())   # True
+
+num="23"
+print(num.isnumeric())
+
+num="Abc00BD"
+print(num.isnumeric())
+
+num="\u00BD"
+print(num.isnumeric())
+num="3.23"
+print(num.isnumeric())
+
+
