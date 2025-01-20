@@ -112,4 +112,142 @@ print(fruits[-3:])
 print(fruits[::-1])
 string="Kaleem"
 print(string[::-1])
-    
+
+# modifiying list
+fruits=["Apple","Banana","Carrot","Orange","Grapes"]
+
+fruits[0]="Alpha"
+print(fruits)
+fruits[1]="Apple"
+print(fruits)
+
+last_index=len(fruits)-1
+print(last_index)
+
+fruits[last_index]="lime"
+print(fruits)
+
+does_exist="Carrot" in fruits
+
+print(does_exist)
+
+isexist="Orange" in fruits
+print(isexist)
+
+fruits.append("Apple")
+print(fruits)
+fruits.append("lime")
+print(fruits)
+
+fruits=["Apple","Banana","Carrot","Orange","Grapes"]
+
+fruits.insert(1,"Narangi")
+print(fruits)
+fruits.insert(1,"Narangi")
+print(fruits)
+
+fruits.remove("Narangi")
+print(fruits)
+fruits.insert(4,"Narangi")
+print(fruits)
+fruits.remove("Narangi")
+print(fruits)
+
+fruits.remove("Carrot")
+print(fruits)
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.pop()
+print(fruits)
+fruits.pop(0)
+print(fruits)
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+del fruits[0]
+print(fruits)
+
+del fruits[1]
+print(fruits)
+del fruits[1:3]
+print(fruits)
+fruits = ['banana', 'orange', 'mango', 'lemon']
+
+print(fruits)
+
+fruits.clear()
+print(fruits)
+
+fruits=['banana', 'orange', 'mango', 'lemon']
+
+fruit_copy=fruits.copy()
+print(fruit_copy)
+
+l1=[1,2,3,4,5]
+l2=[6,7,8,9,10]
+zero=[0]
+
+output=l1+zero+l2
+print(output)
+
+fruits=['banana', 'orange', 'mango', 'lemon']
+vegitables=["Tomatt","Potato","Cabbage","Onion","Carrot"]
+fruit_and_veg=fruits+vegetables
+print(fruit_and_veg)
+
+list1=["item1","item2"]
+list2=["item3","item4","item5"]
+
+list1.extend(list2)
+
+print(list1)
+
+num1=[1,2,3,4,5,6]
+num2=[1,2,7,8,9]
+
+num1.extend(num2)
+print("Numbers:",num1)
+
+negative_num=[-1,-2,-3,-4]
+positive_num=[1,2,3,4,5]
+zero=[0]
+negative_num.extend(zero)
+print(negative_num)
+
+fruits=['banana', 'orange', 'mango', 'lemon',"lemon","lemon"]
+
+count_of_repeated=fruits.count("lemon")
+print(count_of_repeated)
+
+ages=[22,44,22,44,55,22,11,22]
+print(ages.count(22))
+
+# index of the list
+
+index1=fruits.index("orange")
+print(index1)
+
+print(ages.index(44))
+print(fruits)
+fruits.reverse()
+print(fruits)
+
+ages.reverse()
+print(ages)
+
+integer_list=[10,9,8,7,6,5,4,3,2,1]
+
+integer_list.reverse()
+
+print(integer_list)
+
+fruits.sort()
+
+print(fruits)
+
+fruits.sort(reverse=True)
+print(fruits)
+
+ages.sort()
+print(ages)
+ages.sort(reverse=True)
+print(ages)
