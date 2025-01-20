@@ -292,3 +292,21 @@ print(it_companies)
 
 deosExist="Microsoft" in it_companies
 print(deosExist)
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+print(ages[0])
+print(ages[-1])
+
+# sort ages
+ages.sort()
+print(ages)
+
+print(ages[0])
+print(ages[-1])
+
+ages.append(19)
+print(ages)
+
+ages.append(26)
+print(ages)
