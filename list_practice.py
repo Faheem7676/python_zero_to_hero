@@ -251,3 +251,44 @@ ages.sort()
 print(ages)
 ages.sort(reverse=True)
 print(ages)
+
+empty_list=[]
+print(type(empty_list))
+# empty_list=list()
+# print(type(empty_list))
+
+lst=["Rahul", 43, "Johan",3,2,4,5]
+
+print(lst)
+print(len(list))
+print(len(lst))
+
+mix_data_type=["name","age","height","marital status","Address","city"]
+print(mix_data_type)
+print(type(mix_data_type))
+print(len(mix_data_type))
+print(mix_data_type[0])
+print(mix_data_type[-1])
+middle_item=mix_data_type[len(mix_data_type)//2]
+print(middle_item)
+
+it_companies=["Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon"]
+
+print("IT_Companies:",it_companies)
+companies=it_companies.count("Apple")
+print("companies number:",companies)
+
+
+
+it_companies.count("Microsoft")
+print(it_companies)
+
+it_companies.append("Ginger")
+print(it_companies)
+
+it_companies.insert(1,"TATA")
+
+print(it_companies)
+
+deosExist="Microsoft" in it_companies
+print(deosExist)
