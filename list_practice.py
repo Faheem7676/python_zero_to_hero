@@ -112,4 +112,19 @@ print(fruits[-3:])
 print(fruits[::-1])
 string="Kaleem"
 print(string[::-1])
+
+# modifiying list
+fruits=["Apple","Banana","Carrot","Orange","Grapes"]
+
+fruits[0]="Alpha"
+print(fruits)
+fruits[1]="Apple"
+print(fruits)
+
+last_index=len(fruits)-1
+print(last_index)
+
+fruits[last_index]="lime"
+print(fruits)
+
     
