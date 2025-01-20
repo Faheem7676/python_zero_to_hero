@@ -35,6 +35,31 @@ list=["Rahul",250, True ,{"Name": "Rahul Boss", "Age": 45, "Address": "India"}]
 
 print(list)
 
+fruits=["Banana","organge","Manago","Lemon"]
+
+first_fruit=fruits[0]
+print(first_fruit)
+
+second_fruit=fruits[1]
+print(second_fruit)
+
+last_fruit=fruits[3]
+print(last_fruit)
+
+#last_index
+last_index=len(fruits)-1
+print(last_index)
+last_fruit=fruits[last_index]
+print(last_fruit)
+
+l=["Kareem","Raheem","Faheem","Saleem","Hareem"]
+
+last_index=len(l)-1
+print(last_index)
+lastName=l[last_index]
+print(l[last_index])
+print(lastName)
+
 
     
     
