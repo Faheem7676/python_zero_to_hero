@@ -112,4 +112,44 @@ p2.add_skill("UFT")
 p2.add_skill("VB Script")
 print(p1.skills)
 print(p2.skills)
+
+
+class Student(Person):
+    
+    pass
+
+object=Student("Automation","Testing",20,"US","Los Angels")
+print(object.person_info())
+object.add_skill("SQL")
+object.add_skill("Swagger")
+object.add_skill("zephyr")
+print(object.skills)
+
+
+class Student(Person):
+    
+    def __init__(self,firstName="A",lastName="B",age=45,country="India",city="M",gender="Male"):
+        
+        self.gender=gender
+        super().__init__(firstName,lastName,age,country,city)
+        
+    def person_info(self):
+        
+        gender="He" if self.gender=="male" else "She"
+        return f" {self.firstName} {self.lastName} is {self.age} years old.{self.gender} lives in {self.city}, {self.country}."
+    
+s1 = Student('Eyob', 'Yetayeh', 30, 'Finland', 'Helsinki','male')
+s2 = Student('Lidiya', 'Teklemariam', 28, 'Finland', 'Espoo', 'female')
+print(s1.person_info())
+s1.add_skill('JavaScript')
+s1.add_skill('React')
+s1.add_skill('Python')
+print(s1.skills)
+
+print(s2.person_info())
+s2.add_skill('Organizing')
+s2.add_skill('Marketing')
+s2.add_skill('Digital Marketing')
+print(s2.skills)
+        
     

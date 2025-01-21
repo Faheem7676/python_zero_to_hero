@@ -55,3 +55,17 @@ c2=(5,2)
 myLine=Line(c1,c2)
 print(myLine.distance())
 print(myLine.slope())
+
+
+from class_object import Person
+
+class Student2(Person):
+    
+    S2=Person("Hareem","Kareem",33,"New","ABC")
+    print(S2.person_info())
+    S2.add_skill("Jira")
+    S2.add_skill("Confluence")
+    S2.add_skill("Database")
+    print(S2.skills)
+    
+    
