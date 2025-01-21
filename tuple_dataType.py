@@ -77,6 +77,28 @@ print(lst)
 
 fruits[0]="Apple"
 print(fruits)
-tuple(fruits)
-print(fruits)
+# tuple(fruits)
+# print(fruits)
 print(type(fruits))
+
+print("item1" in tpl)
+print("Apple" in fruits)
+
+tpl1=("item1","item2","item3")
+tpl2=("item4","item5","item6")
+
+tpl=tpl2+tpl1
+print(tpl)
+
+empty_tuple1=()
+tuple_brother=("Bara Bhai","Chohta Bhai")
+tuple_sister=("Bari bahan","Chhoti Bahan")
+
+sibling=tuple_brother+tuple_sister
+print(sibling)
+print(len(sibling))
+
+print(type(tuple_brother))
+
+list=list(tuple_brother)
+print(type(list))
