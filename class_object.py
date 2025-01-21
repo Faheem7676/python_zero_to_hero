@@ -151,5 +151,6 @@ s2.add_skill('Organizing')
 s2.add_skill('Marketing')
 s2.add_skill('Digital Marketing')
 print(s2.skills)
-        
+
+
     
