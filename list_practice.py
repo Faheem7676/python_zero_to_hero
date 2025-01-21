@@ -310,3 +310,16 @@ print(ages)
 
 ages.append(26)
 print(ages)
+
+print("*****************")
+
+def merge_list(a,b):
+    
+    return sorted(set(a+b))
+
+
+a=[1,2,3,4,5]
+b=[3,2,4,9,7]
+c=merge_list(a,b)
+print(c)
+
