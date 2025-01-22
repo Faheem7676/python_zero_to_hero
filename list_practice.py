@@ -323,3 +323,33 @@ b=[3,2,4,9,7]
 c=merge_list(a,b)
 print(c)
 
+
+numlist = [1,2,3,4,{'five':5,'six':6,'seven':7},8]
+
+print(numlist)
+
+# for i in numlist:
+    
+#     print(numlist[i])
+    
+print("**********************************************") 
+num_list=[1,2,3,4,{"five": 5,"six": 6,"seven": 7},8,9]
+
+print(num_list)
+
+empty_list=[]
+
+for item in num_list:
+    
+    if isinstance(item,dict):
+        empty_list.extend(item.values())
+    else:
+        empty_list.append(item)
+    
+    
+print(empty_list)
+
+    
+    
+
+
