@@ -327,3 +327,94 @@ string='   Coding For All      '
 print(len(string))
 string2=string.strip()
 print(len(string2))
+
+
+
+string="Try programiz.pro"
+
+string.lower()
+string1=string.lower()
+print(string1)
+
+# intialize dictionary to store char count
+char_counts={}
+
+# iterate each char in the string
+for char in string:
+    
+    if char!=" ":
+        
+        if char in char_counts:
+            
+            char_counts[char]+=1
+            
+        else:
+            char_counts[char]=1
+        
+# repeated_char={char: count for}
+#     print(char_counts)
+
+repeated_chars = {char: count for char, count in char_counts.items() if count > 1}
+print("repeted_chars:",repeated_chars)
+
+
+string="I am Faheem"
+
+l=string.split()
+print(l)
+
+reverse_string=" ".join(reversed(l))
+
+print(reverse_string)
+
+
+from collections import Counter
+
+string="ABCDEABCDabcabchkldh"
+
+
+char_counts=Counter(string)
+
+
+# Filter and display only the repeated characters
+repeated_chars = {char: count for char, count in char_counts.items() if count > 1}
+
+print(repeated_chars)
+print(char_counts)
+
+
+string="ABCdeGFABCTESd"
+
+string.lower()
+print(string)
+
+char_count={}
+
+for char in string:
+    
+    if char!=" ":
+        
+        if char in char_count:
+            
+            char_count[char]=char_count[char]+1
+            
+        else:
+            char_count[char]=1
+            
+repeated_chars = {char: count for char, count in char_count.items() if count > 1}
+print("repeted_chars:",repeated_chars)
+
+
+d={1: "firstValue",2: "secondvalue"}
+
+print(d[1])
+
+string="ABCEDabcd"
+
+
+    
+
+
+
+
+
