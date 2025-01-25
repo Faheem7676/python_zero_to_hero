@@ -349,6 +349,32 @@ for item in num_list:
     
 print(empty_list)
 
+######################################################
+old_list=["a","b","c","d","a","b"]
+
+new_list=set(old_list)
+
+print(new_list)
+
+empty_list=[]
+
+for item in old_list:
+    
+    if item not in empty_list:
+        
+        empty_list.append(item)
+        
+print(empty_list)
+
+#############################################
+
+new=dict.fromkeys(old_list).keys()
+print(new)
+
+    
+  
+        
+
     
     
 
