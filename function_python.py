@@ -199,6 +199,54 @@ def find_even_number(n):
 print(find_even_number(10))
 
 #############################
+
+def fun(*args):
+    
+    pass
+
+print(fun("parm1","parm2","parm3"))
+
+#####################################
+def sum_of_all_numbers(*nums):
+    
+    total=0
+    
+    for i in nums:
+        
+        total+=1
+        
+    return total
+
+print(sum_of_all_numbers(10,4,3,9))
+
+#######################################
+
+def generateteam(team,*args):
+    
+    print(team)
+    for i in args:
+        pass
+        
+        print(i)
+        
+print(generateteam("Team1","Rahul","Tandulkar","Gunguly"))
+
+
+###########################################################
+
+def remove_item(food_staff):
+    
+    food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+    food_staff.remove("Mango")
+    food_staff.pop()
+    food_staff.append("Milki")
+    return food_staff
+
+print(remove_item("food_Staff")) 
+
+########################################
+
+    
         
         
         
