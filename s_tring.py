@@ -411,6 +411,22 @@ print(d[1])
 
 string="ABCEDabcd"
 
+print(string)
+
+string="Testing"
+
+s=list(string)
+print(s)
+
+s[0]="K"
+print(s)
+
+s="".join(s)
+print(s)
+
+test="I am practicing a language Python"
+
+print(test.split(" "))
 
     
 
