@@ -6,17 +6,28 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from selenium.webdriver.chrome.options import Options
+
 
 # Setup WebDriver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.maximize_window()
 
+chrome_options = Options()
+print("Alert pop up1")
+chrome_options.add_experimental_option("prefs", {
+    "profile.default_content_setting_values.notifications": 2,  # 1 = Allow, 2 = Block
+})
+print("Alert pop up")
+
 try:
     # Open the website
-    driver.get("https://QA.com")  # Replace with the actual login page URL
+    driver.get("https://allenplus.allen.ac.in/")  # Replace with the actual login page URL
     
     # Wait for elements to be present
     wait = WebDriverWait(driver, 10)
+    
+    
     
     # Locate username & password fields and enter credentials
     username = wait.until(EC.presence_of_element_located((By.XPATH, "//form/label/input[@name='user']")))  # Change ID as per the website
@@ -33,6 +44,17 @@ try:
     # Locate and click the login button
     login_button = driver.find_element(By.XPATH, "//button[@type='submit']")  # Change XPath as per the website
     login_button.click()
+    time.sleep(4)
+    
+    #  # Switch to alert
+    # alert = driver.switch_to.alert
+    
+    # # Print alert text
+    # print("Alert Text:", alert.text)
+    
+    # # Accept (OK) the alert
+    # alert.accept()
+    # print("✅ Alert accepted successfully")
     
     
     verifyhomeworkbutton=wait.until(EC.presence_of_element_located((By.XPATH, "//nav[@class='no-allen']/ul/li[@id='homeworktour']")))  # Modify verification criteria
@@ -50,11 +72,21 @@ try:
     lists=driver.find_elements(By.XPATH,"//nav/ul[@class='navbar-nav']//li")
     print("Lists:",lists)
     
+    for ele in lists:
+        text = driver.execute_script("return arguments[0].textContent;", ele).strip()
+    if text:
+        print(text)
+    
     print("Menu Items:")
     for ele in lists:
         text = ele.text.strip()
         if text:  # Only print elements that have visible text
             print(text)
+            if text=="Quiz":
+                ele.click()
+                print("element is clicked")
+            else:
+                print("element is not found")
         
     try:
         verifyschedulekbutton = wait.until(EC.presence_of_element_located((By.XPATH, "//span[@class='fadeInRight animated nav-link-name name-hide tax-show'][normalize-space()='Schedule']")))
